@@ -1,0 +1,104 @@
+.roundIcons{
+    height: 40px;
+    width: 40px;
+    padding: 15px;
+    background-color: var(--socialTheme);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.roundIcons:hover{
+    background-color: var(--hoverTheme);
+}
+.roundIconsNoHover{
+    height: 40px;
+    width: 40px;
+    padding: 15px;
+    background-color: var(--socialTheme);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.historyDelete:hover{
+    background-color:var(--main2Theme);
+}
+.roundIconsSmaller{
+    height: 20px;
+    width: 20px;
+    padding: 5px;
+    background-color:var(--socialTheme);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.roundIconsSmaller:hover{
+    background-color:var(--hoverTheme);
+
+}
+.roundImg{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    object-fit: cover;
+    display: flex;
+    object-position: center;
+    justify-content: center;
+    align-items: center;
+}
+.roundImg:hover{
+    opacity: 0.7;
+}
+.roundImgSmaller{
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    object-fit: cover;
+    object-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.roundImgBigger{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    background-color: black;
+    object-fit: cover;
+    display: flex;
+    object-position: center;
+    justify-content: center;
+    align-items: center;
+}
+.squareImg{
+    border-radius: 10px;
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+}
+
+.roundBoxEffect{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 25px 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 40px;
+    width: 100%;
+    
+}
+
+.OpacityHoverEffect:hover{
+    opacity: 0.6;
+}
+.nicerLinks{
+    text-decoration: none;
+}
+.hoverEffect:hover{
+    background-color:var(--hoverTheme);
+}

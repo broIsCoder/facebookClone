@@ -1,0 +1,100 @@
+.searchBoard {
+    background-color: var(--interactiveTheme);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    flex-direction: column;
+    width: 0;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    transform: scale(0.98);
+    
+}
+.searchBoard:hover{
+    transform: scale(1);
+}
+
+.showSearchBoard {
+    z-index: 10;
+    opacity: 1;
+    width: 350px;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.myDropDownInfoMenu{
+    background-color:var(--interactiveTheme);
+    height: 0;
+    width: 350px;
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    transform: scale(0.98);
+    transition: all 0.2s ease-in-out;
+}
+.myDropDownInfoMenu:hover{
+    transform: scale(1);
+
+}
+.showMyDropDownInfoMenu{
+    z-index: 10;
+    opacity: 1;
+    height: 400px;
+    transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width:700px) {
+    .showSearchBoard{
+        width: 100vw;
+        min-height: 100vh;
+    }
+    .searchBoard{
+        transform: scale(1);
+        border-radius: 0;
+        min-height: 100vh;
+    }
+    .ShowMyDropDownInfoMenu{
+        width: 100vw;
+        min-height: 100vh;
+    }
+    .myDropDownInfoMenu{
+        transform: scale(1);
+        border-radius: 0;
+    }
+}
+
+.themeToggleBtn{
+    height: 30px;
+    width: 50px;
+    border-radius: 30px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 5px;
+    position: relative;
+    transition: relative 0.2s ease-in-out;
+}
+.default{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    left: 10%;
+    transition: all 0.2s ease-in-out;
+}
+.switch .default {
+    left: 50%;
+    background-color: rgb(255, 255, 255);
+}
+.switch{
+    transition: all 0.2s ease-in-out;
+    background-color: black;
+}

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Socialbook - A Facebook Clone</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/interactive.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+
+      <div class="navLeft">
+        <div class="navLeftBox">
+
+          <a href="index.html">
+            <svg height="40" width="40" xmlns="http://www.w3.org/2000/svg" height="2em"
+              viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <style>
+                svg {
+                  fill: #0080ff
+                }
+              </style>
+              <path
+                d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+            </svg>
+          </a>
+          <div class="hoverEffect searchBtn1">
+            <div class="roundIcons">
+              <i class="fa-solid fa-magnifying-glass fa-xl searchIcon"></i>
+            </div>
+            <input type="text" class="searchBox1 searchBox" placeholder="Search here">
+          </div>
+        </div>
+
+        <div class="searchBoard">
+          <div class="searchBoardBtnContainer">
+            <button class="backBtn roundIcons hoverEffect">
+              <i class="fa-solid fa-arrow-left fa-2xl searchIcon"></i>
+            </button>
+
+            <div class="searchBtn2 hoverEffect">
+              <div class="roundIcons hoverEffect">
+                <i class="fa-solid fa-magnifying-glass fa-xl searchIcon"></i>
+              </div>
+              <input type="text" class="searchBox   " placeholder="Search here">
+            </div>
+          </div>
+
+          <div class="searchHistoryContainer">
+
+            <div class="searchHistory hoverEffect">
+              <a href="index.html" class="searchHistoryInfo nicerLinks">
+                <img loading="lazy" class="roundImg" src="images/feed-image-1.png" alt="photo">
+                <div class="historyName">Hari Raj</div>
+              </a>
+              <button class="deleteHistoryBtn roundIconsNoHover historyDelete">
+                <i class="fa-solid fa-xmark fa-xl searchIcon"></i>
+              </button>
+            </div>
+
+            <div class="searchHistory hoverEffect">
+              <a href="index.html" class="searchHistoryInfo nicerLinks">
+                <img loading="lazy" class="roundImg" src="images/feed-image-2.png" alt="photo">
+                <div class="historyName">som RAj</div>
+              </a>
+              <button class="deleteHistoryBtn roundIconsNoHover historyDelete">
+                <i class="fa-solid fa-xmark fa-xl searchIcon"></i>
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="navMiddle">
+        <div class="navMiddleBox">
+
+          <div class="navMiddleWindow">
+            <a href="index.html" class="home hoverEffect nicerLinks">
+              <i class="fa-solid fa-house fa-xl"></i>
+            </a>
+            <a href="index.html" class="friends hoverEffect nicerLinks">
+              <i class="fa-solid fa-user-group fa-xl"></i>
+            </a>
+            <a href="index.html" class="videos hoverEffect nicerLinks">
+              <i class="fa-solid fa-tv fa-xl"></i>
+            </a>
+            <a href="index.html" class="shop hoverEffect nicerLinks">
+              <i class="fa-solid fa-shop fa-xl"></i>
+            </a>
+            <a href="index.html" class="groups hoverEffect nicerLinks">
+              <i class="fa-solid fa-people-group fa-xl"></i>
+            </a>
+          </div>
+
+          <div class="navMiddlePhone hoverEffect">
+            <i class="fa-solid fa-bars fa-xl"></i>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="navRight">
+        <div class="navRightBox">
+          <a href="index.html" class="roundIcons nicerLinks">
+            <i class="fa-solid fa-bell fa-xl"></i>
+          </a>
+          <a href="index.html" class="roundIcons nicerLinks">
+            <i class="fa-brands fa-facebook-messenger fa-xl"></i>
+          </a>
+          <button class="myDropDownInfoMenuBtn">
+            <img loading="lazy" class="roundImg myProfileImg" src="images/profile-pic.png" alt="image">
+        </div>
+        </button>
+
+        <div class="myDropDownInfoMenu">
+          <div class="myInfoMenuBox">
+            <div class="myInfoContainer hoverEffect">
+              <div class="myInfoBox">
+                <img loading="lazy" class="roundImg myProfileImg" src="images/profile-pic.png" alt="image">
+                <div class="myName">David Nolan</div>
+              </div>
+              <button class="themeToggleBtn">
+                <span class="default"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </nav>
+  </header>
+
+  <main>
+    <div class="userInfo">
+      <div class="info">
+
+        <a href="index.html" class="roundBoxEffect hoverEffect nicerLinks">
+          <div class="roundIcons">
+            <img loading="lazy" class="myProfileImg roundImg" src="images/profile-pic.png" alt="image">
+          </div>
+          <div class="userName userInfoNames">David Nolan</div>
+        </a>
+
+        <a href="index.html" class="roundBoxEffect hoverEffect nicerLinks">
+          <div class="roundIcons">
+            <i class="fa-solid fa-user-group fa-xl"></i>
+          </div>
+          <div class="userFriends userInfoNames">Friends</div>
+        </a>
+
+        <a href="index.html" class="roundBoxEffect hoverEffect nicerLinks">
+          <div class="roundIcons">
+            <i class="fa-solid fa-clock fa-xl"></i>
+          </div>
+          <div class="userFriends userInfoNames">Memories</div>
+        </a>
+
+        <a href="index.html" class="roundBoxEffect hoverEffect nicerLinks">
+          <div class="roundIcons">
+            <i class="fa-solid fa-bookmark fa-xl"></i>
+          </div>
+          <div class="userFriends userInfoNames">Saved</div>
+        </a>
+
+        <a href="index.html" class="roundBoxEffect hoverEffect nicerLinks">
+          <div class="roundIcons">
+            <i class="fa-solid fa-people-group fa-xl"></i>
+          </div>
+          <div class="userFriends userInfoNames">Groups</div>
+        </a>
+
+        <a href="index.html" class="roundBoxEffect hoverEffect nicerLinks">
+          <div class="roundIcons">
+            <i class="fa-solid fa-tv fa-xl"></i>
+          </div>
+          <div class="userFriends userInfoNames">Video</div>
+        </a>
+
+        <a href="index.html" class="roundBoxEffect hoverEffect nicerLinks">
+          <div class="roundIcons">
+            <i class="fa-solid fa-shop fa-xl"></i>
+          </div>
+          <div class="userFriends userInfoNames">Marketplace</div>
+        </a>
+
+        <a href="index.html" class="roundBoxEffect hoverEffect nicerLinks">
+          <div class="roundIcons">
+            <i class="fa-solid fa-mobile fa-xl"></i>
+          </div>
+          <div class="userFriends" class=>Feeds</div>
+        </a>
+
+        <button class="seeMore seeBtn roundBoxEffect hoverEffect nicerLinks">
+          <div class="roundIcons">
+            <i class="fa-solid fa-caret-down fa-xl"></i>
+          </div>
+          <p>See More</p>
+        </button>
+
+        <div class="see">
+
+          <a href="index.html" class="roundBoxEffect hoverEffect nicerLinks">
+            <div class="roundIcons">
+              <i class="fa-solid fa-chart-simple fa-xl"></i>
+            </div>
+            <div class="userFriends userInfoNames">Ads Manager</div>
+          </a>
+
+          <a href="index.html" class="roundBoxEffect hoverEffect nicerLinks">
+            <div class="roundIcons">
+              <i class="fa-solid fa-gamepad fa-xl"></i>
+            </div>
+            <div class="userFriends userInfoNames">Gaming</div>
+          </a>
+
+          <a href="index.html" class="roundBoxEffect hoverEffect nicerLinks">
+            <div class="roundIcons">
+              <i class="fa-brands fa-facebook-messenger fa-xl"></i>
+            </div>
+            <div class="userFriends userInfoNames">Messenger</div>
+          </a>
+
+          <button class="seeLess seeBtn roundBoxEffect hoverEffect nicerLinks">
+            <div class="roundIcons">
+              <i class="fa-solid fa-caret-up fa-xl"></i>
+            </div>
+            <p>See Less</p>
+          </button>
+        </div>
+
+      </div>
+
+      <div class="shortcutsContainer">
+        <div class="shortcutsLabel nicerLinks">Your shortcuts</div>
+        <div class="shortcutsBox">
+
+          <a href="index.html" class="shortcut nicerLinks roundBoxEffect hoverEffect">
+            <div class="shortcutsImg">
+              <img loading="lazy" class="squareImg" src="images/feed-image-2.png" alt="img">
+            </div>
+            <div class="shortcutsName">
+              <p>Beach Lovers</p>
+            </div>
+          </a>
+          <a href="index.html" class="shortcut nicerLinks roundBoxEffect hoverEffect">
+            <div class="shortcutsImg">
+              <img loading="lazy" class="squareImg" src="images/feed-image-3.png" alt="img">
+            </div>
+            <div class="shortcutsName">
+              <p>Walking & Fitness</p>
+            </div>
+          </a>
+          <a href="index.html" class="shortcut nicerLinks roundBoxEffect hoverEffect">
+            <div class="shortcutsImg">
+              <img loading="lazy" class="squareImg" src="images/feed-image-4.png" alt="img">
+            </div>
+            <div class="shortcutsName">
+              <p>Writing is great so we love them</p>
+            </div>
+          </a>
+          <a href="index.html" class="shortcut nicerLinks roundBoxEffect hoverEffect">
+            <div class="shortcutsImg">
+              <img loading="lazy" class="squareImg" src="images/feed-image-5.png" alt="img">
+            </div>
+            <div class="shortcutsName">
+              <p>Talk and Chai Lovers</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="links">
+        <a class="terms" href="index.html">Privacy</a>
+        <a class="terms" href="index.html">Terms</a>
+        <a class="terms" href="index.html">Advertising</a>
+        <a class="terms" href="index.html">Ad Choices</a>
+        <a class="terms" href="index.html">Cookies</a>
+        <a class="terms" href="index.html">More</a>
+        <a class="terms" href="index.html">Meta&copy;2023</a>
+      </div>
+    </div>
+
+    <div class="postsContainer">
+      <div class="postsBox">
+
+        <div class="reelContainer">
+          <button class="previousBtn scrollBtn hoverEffect">
+            <i class="fa-solid fa-circle-left fa-2xl"></i>
+          </button>
+          <button class="nextBtn scrollBtn hoverEffect">
+            <i class="fa-solid fa-circle-right fa-2xl"></i>
+          </button>
+
+          <div class="reelBox">
+            <a href="index.html" class="myReel">
+              <img loading="lazy" class="myProfileImg myReelPhoto" src="images/profile-pic.png" alt="image">
+              <div class="addStoryContainer">
+                <div class="addStory">
+                  <i class="fa-solid fa-plus fa-xl "></i>
+                </div>
+              </div>
+              <div class="createStoryContainer">
+                <div class="createStory">Create Story</div>
+              </div>
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="myPostContainer">
+          <div class="myPostBox">
+            <img loading="lazy" class="myProfileImg roundImg" src="images/profile-pic.png " alt="image">
+            <input class="myPostText" type="text" placeholder="What's on your mind ,David?">
+          </div>
+          <div class="myPostOptions">
+            <button class="liveVideoBtn myPostOptionBtn hoverEffect">
+              <i class="fa-solid fa-video fa-xl liveVideo" style="color: red;"></i> Live Video
+            </button>
+            <button class="photosBtn myPostOptionBtn hoverEffect">
+              <i class="fa-solid fa-photo-film fa-xl photo" style="color: yellowgreen;"></i> Your Photos
+            </button>
+            <button class="feelingBtn myPostOptionBtn hoverEffect">
+              <i class="fa-solid fa-smile fa-xl feeling" style="color: yellow;"></i> Feeling/ Activity
+            </button>
+          </div>
+        </div>
+
+        <div class="otherPostContainer">
+          <div class="otherPostBox">
+          </div>
+
+          <div class="loadMorePostBtn post hoverEffect">
+            <i class="fa-solid fa-arrows-rotate fa-2xl"></i>
+            <b>Load More</b>
+          </div>
+        </div>
+
+        <div class="selectedPostContainer">
+        </div>
+      </div>
+    </div>
+
+    <div class="socials">
+      <div class="eventContainer">
+        <div class="eventsOption">
+          <b>Events</b>
+          <a href="index.html">See More</a>
+        </div>
+        <div class="eventBox">
+          <div class="event">
+            <div class="eventImgContainer">
+              <img loading="lazy" class="roundImg myProfileImg" src="images/profile-pic.png" alt="image">
+            </div>
+            <div class="eventName">Today is your birthday . Let's Celebrate with stories . Congratulation on your
+              birthday</div>
+          </div>
+          <div class="event">
+            <div class="eventImgContainer">
+              <img loading="lazy" class="roundImg" src="images/member-1.png" alt="image">
+            </div>
+            <div class="eventName">Today is your birthday . Let's Celebrate with stories . Congratulation on your
+              birthday</div>
+          </div>
+          <div class="event">
+            <div class="eventImgContainer">
+              <img loading="lazy" class="roundImg" src="images/member-2.png" alt="image">
+            </div>
+            <div class="eventName">Today is your birthday . Let's Celebrate with stories . Congratulation on your
+              birthday</div>
+          </div>
+        </div>
+      </div>
+      <div class="friendrequestContainer">
+        <div class="requestOption">
+          <b>Friends Request</b>
+          <a href="index.html">See More</a>
+        </div>
+        <div class="friendrequestbox">
+          <div class="friendrequest hoverEffect">
+            <a href="index.html" class="requestContainer requestLink nicerLinks">
+
+              <div class="friendrequestImgContainer">
+                <img loading="lazy" class="roundImg" src="images/member-8.png" alt="image">
+                <div class="friendrequestName">Raj Shah</div>
+                <div class="requestTime">3d</div>
+              </div>
+              <div class="requestInfoContainer opacityHoverEffect">
+                <div class="mutualfriendContainer">
+                  <img loading="lazy" class="roundImgSmaller mutualFriendImg" src="images/member-2.png" alt="image">
+                  <img loading="lazy" class="roundImgSmaller mutualFriendImg" src="images/member-1.png" alt="image">
+                  <img loading="lazy" class="roundImgSmaller mutualFriendImg" src="images/member-1.png" alt="image">
+                  <img loading="lazy" class="roundImgSmaller mutualFriendImg" src="images/member-1.png" alt="image">
+                  <small class="mutualFriendNo">10 mutual friend</small>
+                </div>
+              </div>
+            </a>
+
+            <button class="friendrequestBtn acceptBtn">Accept</button>
+            <button class="friendrequestBtn removeBtn">Remove</button>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="contactsContainer">
+        <div class="contactsOptions">
+          <b>Contacts</b>
+          <a href="index.html">See More</a>
+        </div>
+        <div class="contactsBox">
+          <div class="contact hoverEffect">
+            <div class="contactImgContainer">
+              <img loading="lazy" src="images/member-1.png" class="roundImg" alt="image">
+              <div class="status online"></div>
+            </div>
+            <div class="contactName">Sita Yadav</div>
+          </div>
+
+          <div class="contact hoverEffect">
+            <div class="contactImgContainer">
+              <img loading="lazy" src="images/member-5.png" class="roundImg" alt="image">
+              <div class="status online"></div>
+            </div>
+            <div class="contactName">Raj Kumar</div>
+          </div>
+
+          <div class="contact hoverEffect">
+            <div class="contactImgContainer">
+              <img loading="lazy" src="images/member-3.png" class="roundImg" alt="image">
+              <div class="status "></div>
+            </div>
+            <div class="contactName">नभध</div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="load.js"></script>
+  <script src="manipulate.js"></script>
+</body>
+
+</html>

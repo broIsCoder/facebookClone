@@ -1,0 +1,71 @@
+postHTMl += `
+<div class="post">
+${element.hidden === false ?
+// if not hidden
+`<div class="postProfileContainer">
+  <div class="profileContainer">
+  <a href="index.html" class="profileBox">
+  <img loading="lazy" class="roundImg postProfilePic" src=${element.profile} alt="image">
+        ${element.status !== "on" ?
+  //if online
+  `<div class="status"></div>` :
+  //if offline
+  `<div class="status online"></div>`
+}
+      </a>
+
+        ${element.groupName !== "" ?               /// if groupName is not absent
+  `<div class="profile">
+                <div class="postGroupName"><a href="index.html">${element.groupName}</a></div>
+                <div class="postProfileName"><a href="index.html" class="nicerLinks">${element.name}</a></div>
+            </div>` :                            // if groupName is absent
+  `<div class="profile">                   
+                <div class="postProfileName"><a href="index.html" class="nicerLinks">${element.name}</a></div>
+            </div>`}
+    </div>
+
+  <div class="postEdit">
+    <i class="fa-solid fa-ellipsis fa-xl"></i>
+    <i class="fa-solid fa-xmark fa-xl postHideBtn"></i>
+    </div>
+    </div>
+    
+    <div class="postCaption">${element.caption}</div>
+    <div class="postImgContainer">
+    <img class="postImg" src=${element.post} alt="image"></img>
+    </div>
+    <div class="postActivity">
+    <div class="reactionBtnContainer">
+    <button class="postReactionBtn roundIconsSmaller">
+    <i class="fa-solid fa-heart love" style="color: #ff4a4a;"></i>
+    </button>
+    <button class="postReactionBtn roundIconsSmaller">
+      <i class="fa-solid fa-thumbs-up like" style="color: #0080ff;"></i>
+    </button>
+    <button class="postReactionBtn roundIconsSmaller">
+      <i class="fa-solid fa-face-laugh laugh" style="color: #ffff00;"></i>
+    </button>
+    <button class="postReactionBtn roundIconsSmaller">
+      <i class="fa-solid fa-face-angry hate" style="color: #ff0202;"></i>
+    </button>
+    <div class="reactionNo">10</div>
+  </div>
+  <button class="othersShare postActivityBtn">2 shares</button>
+</div>
+<div class="myActivity">
+  <button class="likeBtn activityBtn hoverEffect"><i class="fa-solid fa-thumbs-up fa-2xl like" style="color: #0080ff;"></i>Like</button>
+  <button class="commentBtn activityBtn hoverEffect"><i class="fa-solid fa-comment fa-xl"></i> Comment</button>
+  <button class="shareBtn activityBtn hoverEffect"><i class="fa-solid fa-share fa-xl"></i> Share</button>
+  </div>
+  </div>`:
+// if hidden
+
+  `<div class="hiddenPostBox">
+      <div class="hiddenInfoContainer">
+        <i class="fa-solid fa-eye-slash" style="color: #ffffff;"></i>
+        <b>Hidden</b>
+      </div>
+      <button class="undoBtn hoverEffect">Undo</button>
+  </div>`
+
+}` ;

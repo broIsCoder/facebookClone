@@ -1,0 +1,177 @@
+@media screen and (max-width:1243px) {
+    .userInfo {
+        display: none;
+    }
+
+    .postsContainer {
+        width: 70%;
+    }
+
+    .reelContainer {
+        width: 95%;
+    }
+
+    .myPostContainer {
+        width: 95%;
+    }
+
+    .socials {
+        width: 30%;
+    }
+
+    .otherPostContainer {
+        width: 95%;
+    }
+
+    .post {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:1050px) {
+
+    .postsContainer {
+        width: 100%;
+    }
+
+    .socials {
+        display: none;
+    }
+
+    .reelContainer {
+        width: 95%;
+    }
+
+    .myPostContainer {
+        width: 95%;
+    }
+
+    .otherPostContainer {
+        width: 95%;
+    }
+
+    .post {
+        width: 100%;
+    }
+    .searchBtn1{
+        width: 50px;
+    }
+    .selectedPost{
+        width: 50vw;
+        left: 25vw;
+    }
+}
+@media screen and (max-width:900px) {
+    .selectedPost{
+        width: 60vw;
+        left: 20vw;
+    }
+}
+@media screen and (max-width:700px) {
+    .navbar {
+        /* justify-content: flex-start; */
+        gap: 0px;
+    }
+    .navLeft{
+        width: 40vw;
+    }
+    .navMiddle {
+        width: 20vw;
+
+    }
+    .navMiddleBox{
+        width: 100%;
+    }
+    .navRight{
+        width: 40vw;
+    }
+    .navMiddleWindow {
+        position:absolute;
+        width: 100vw;
+        top: 10vh;
+        left: 0;
+        height: 0px;
+        overflow: hidden;
+        background-color:var(--mainTheme);
+        box-shadow: 1px 10px 10px black;
+        z-index: 11;
+    }
+
+    .navMiddlePhone {
+        display: flex;
+    }
+    .feelingBtn{
+        display: none;
+    }
+    .scrollBtn{
+        display: none;
+    }
+    .selectedPost{
+        width: 100vw;
+        left: 0;
+        top: 0;
+        border-radius: 0;
+    }
+    .selectedPost{
+        width: 70vw;
+        left: 15vw;
+        height: 100vh;
+    }
+}
+@media screen and (max-width:600px) {
+    .selectedPost{
+        width: 100vw;
+        min-height: 100vh;
+        left: 0vw;
+    }
+}
+@media screen and (max-width:430px) {
+ 
+    .searchBtnOption {
+        width: 40px;
+    }
+
+    .navLeft {
+        width: 30%;
+    }
+
+    .navMiddle {
+        width: 18%;
+        justify-content: center
+    }
+
+    .navRight {
+        width: 57%;
+    }
+    .reelContainer{
+        padding: 0;
+    }
+    .reelBox{
+        padding: 0;
+    }
+    .reel{
+        height: 200px;
+        min-width: 120px;
+        max-width: 120px;
+    }
+    .myReel{
+        height: 200px;
+        min-width: 120px;
+        max-width: 120px;
+    }
+    .postsBox{
+        gap: 5px;
+        padding: 10px 0;
+    }
+    .othersPostContainer{
+        gap: 5px;
+    }
+    .otherPostBox{
+        gap: 5px;
+    }
+    .selectedPost{
+        width: 100vw;
+        left: 0vw;
+    }
+}

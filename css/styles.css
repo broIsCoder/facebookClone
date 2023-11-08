@@ -1,0 +1,1055 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+}
+:root{
+    --mainTheme: rgb(30, 29, 29);
+    --main2Theme: rgb(30, 29, 29);
+    --secondTheme: rgb(34, 34, 34);
+    --postTheme:rgb(52, 52, 52);
+    --socialTheme:rgb(54, 54, 54);
+    --otherTheme:rgb(158, 158, 158);
+    --interactiveTheme:rgb(52, 52, 52);
+    --hoverTheme:rgb(78, 78, 78);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+    height: 10vh;
+    border-bottom: 1px solid grey;
+    background-color: var(--secondTheme);
+    z-index: 5;
+    transition: all linear;
+}
+
+/* //////////////////////////////////////////////////////// */
+.navLeft {
+    display: flex;
+    align-items: center;
+    width: 25vw;
+    height: 100%;
+    position: relative;
+}
+.navLeftBox{
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    width: 100%;
+}
+.searchBtn1 {
+    background-color:var(--mainTheme);
+    border-radius: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    height: 50px;
+    width: 70%;
+    border: none;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 5px;
+    gap: 5px;
+}
+.searchBoardBtnContainer{
+    display: flex;
+    gap: 10px;
+    align-items: center ;
+}
+.backBtn{
+    border: none;
+}
+.searchBtn2 {
+    background-color: var(--mainTheme);
+    border-radius: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    height: 50px;
+    width: 90%;
+    border: none;
+    align-items: center;
+    padding: 5px;
+    gap: 5px;
+}
+
+.searchBtn:hover{
+    background-color: var(--hoverThemes);
+}
+
+.searchBox {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: transparent;
+    padding: 0 10px 0 0;
+    overflow-x: hidden;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-size: 1.2rem;
+}
+.searchBoardBtnContainer{
+    padding: 10px;
+}
+.searchHistoryContainer{
+    padding: 10px ;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+}
+.searchHistory{
+    display: flex;
+    gap: 10px;
+    align-content: center;
+    height: 100%;
+    border-radius: 10px;
+    background-color:var(--otherTheme);
+    overflow: hidden;
+    position: relative;
+}
+.searchHistoryInfo{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+.deleteHistoryBtn{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    border: none;
+}
+/* ////////////////////////////////////////////////////////////// */
+.navMiddle {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    width: 50vw;
+    justify-content: center;
+    gap: 10px;
+    height: 100%;
+}
+.navMiddleBox{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navMiddleWindow {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.navMiddleWindow>a {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+.navMiddlePhone {
+    height: 40px;
+    width: 40px;
+    background-color:var(--socialTheme);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.home {
+    background-color:var(--mainTheme);
+}
+
+.navRight {
+    display: flex;
+    align-items: center;
+    padding:10px;
+    width: 25vw;
+    justify-content: flex-end;
+    gap: 10px;
+    height: 100%;
+}
+.navRightBox{
+    display: flex;
+    align-items: center;
+    padding:10px;
+    width: 25vw;
+    justify-content: flex-end;
+    gap: 10px;
+    height: 100%;
+}
+.myDropDownInfoMenuBtn{
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+}
+.myInfoMenuBox{
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    flex-direction: column;
+}
+.myInfoContainer{
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.myInfoBox{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.themeToggleBtn{
+    height: 30px;
+    width: 50px;
+    border-radius: 30px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 5px;
+    position: relative;
+}
+main {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: flex-start;
+    height: 90vh;
+}
+
+.userInfo {
+    width: 25%;
+    overflow-y: scroll;
+    padding: 5px 5px;
+    background-color: var(--main2Theme);
+}
+
+.info {
+    border-bottom: 2px solid rgb(146, 146, 146);
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.userInfoIcons {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seeOption {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 10px 0 10px 0;
+}
+
+.seeBtn {
+    background-color: transparent;
+    border: none;
+}
+
+.see {
+    display: none;
+    flex-direction: column;
+}
+
+.seeLess {
+    display: none;
+}
+
+.shortcutsLabel {
+    padding: 15px 10px 10px;
+    font-size: 1.3rem;
+}
+
+.shortcutsBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.shortcutItem {
+    padding: 5px 0px;
+    display: flex;
+    justify-self: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.shortcutsImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shortcutsName {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.links {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.terms {
+    text-decoration: dotted;
+    font-size: 0.8rem;
+    font-family: sans-serif;
+}
+
+.terms:hover {
+    text-decoration: underline;
+}
+
+.postsContainer {
+    width: 50%;
+    background-color: var(--mainTheme);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.postsBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    height: 90vh;
+    padding: 20px 0;
+    overflow-y: scroll;
+}
+
+.reelContainer {
+    position: relative;
+    display: flex;
+    width: 80%;
+
+}
+
+.reelBox {
+    display: flex;
+    gap: 10px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    padding: 5px;
+    border-radius: 10px;
+    width: 100%;
+    scrollbar-width:none;
+}
+.reelBox::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+.myReel {
+    min-width: 140px;
+    height: 250px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.myReel:hover{
+    transform: scale(1.1);
+    /* z-index: 6; */
+}
+
+.myReelPhoto {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+
+.reel {
+    min-width: 140px;
+    max-width: 140px;
+    height: 250px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.reelPhoto {
+    border-radius: 20px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.2s ease-in-out;
+}
+.reelPhoto:hover{
+    transform: scale(1.2);
+}
+.addStoryContainer {
+    position: absolute;
+    left: 32%;
+    bottom: 35px;
+    padding: 4px;
+    height: 50px;
+    width: 50px;
+    background-color:var(--otherTheme);
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+}
+
+.addStory {
+    background-color: #0080ff;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.addStory:hover{
+    background-color: #2391ff;
+
+}
+
+.createStoryContainer {
+    position: absolute;
+    bottom: 0;
+    background-color: var(--otherTheme);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+
+.createStory {
+    position: absolute;
+    bottom: 10px;
+}
+
+.reelProfilebox {
+    padding: 10px;
+}
+
+.otherProfilePic {
+    position: relative;
+    display: flex;
+    width: 40px;
+
+}
+
+.online {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: rgb(68, 255, 47);
+    border: 3px solid rgb(67, 67, 67);
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.othersPic {
+    border-radius: 50%;
+    border: 5px solid rgb(30, 77, 196);
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+}
+
+.othersName {
+
+    position: absolute;
+    left: 7px;
+    bottom: 10px;
+    overflow: hidden;
+    width: 90%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;/
+}
+
+.scrollBtn {
+    background-color:var(--otherTheme);
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    z-index: 4;
+    top: 33%;
+}
+.scrollBtn:hover{
+    transform: scale(1.2);
+}
+.previousBtn {
+    left: 10px;
+    position: absolute;
+}
+
+.nextBtn {
+    position: absolute;
+    right: 5px;
+}
+
+.myPostContainer {
+    width: 80%;
+    background-color: var(--postTheme);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.myPostBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 0 10px 0;
+    width: 100%;
+    gap: 10px;
+    border-bottom: 2px solid grey;
+}
+
+.myPostText {
+    background-color: var(--mainTheme);
+    border: none;
+    border-radius: 20px;
+    width: 85%;
+    height: 40px;
+    padding: 0px 10px;
+}
+
+.myPostOptions {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5px;
+}
+
+.myPostOptionBtn {
+    background-color: var(--mainTheme);
+    border: none;
+    font-weight: bolder;
+    font-size: 1rem;
+    padding: 20px 0;
+    border-radius: 3px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.otherPostContainer {
+    width: 80%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.otherPostBox{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.post {
+    background-color: var(--postTheme);
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    max-height: 90vh;
+}
+
+.postProfileContainer {
+    display: flex;
+    justify-content: space-between;
+}
+.profileContainer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    height: 50px;
+    width: 60%;
+}
+.profileBox{
+    position: relative;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: red; */
+    width: 100%;
+}
+
+.postGroupName {
+    height: 20px;
+    display: flex;
+    align-content: center;
+    overflow: hidden;
+    font-weight: bolder;
+    /* font-family: sans-serif; */
+    background-color: var(--fourTheme);
+    width: 100%;
+}
+
+.postProfileBox{
+    display: flex;
+    align-content: center;
+    width: 100%;
+    gap: 5px;
+    /* background-color: skyblue; */
+    /* overflow: hidden; */
+    /* justify-content: space-between; */
+
+}
+.postProfileName{
+    /* background-color: pink; */
+    max-width: 70%;
+    overflow: hidden;
+}
+
+.postEdit {
+    display: flex;
+    padding: 15px 0;
+    gap: 10px;
+    width: 50px;
+}
+/* 
+.postCaption {
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+} */
+
+.postImgContainer {
+    max-height: 900px;
+    min-height: 100px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+.postImg{
+    height: 100%;
+    width: 100%;
+    object-fit: scale-down;
+    object-position: center;
+}
+.postActivity {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    border-bottom: 2px solid grey;
+    padding: 5px;
+    align-items: center;
+    position: relative;
+}
+
+.reactionBtnContainer {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    position: relative;
+    height: 40px;
+    width: 100px;
+}
+
+.postReactionBtn {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 8px;
+}
+.postReactionBtn:nth-child(1) {
+    left: 0px;
+    z-index: 4;
+}
+
+.postReactionBtn:nth-child(2) {
+    left: 15px;
+    z-index: 3;
+    /* Adjust the top position for the second button */
+}
+
+.postReactionBtn:nth-child(3) {
+    left: 25px;
+    z-index: 2;
+    /* Adjust the top position for the third button */
+}
+
+.postReactionBtn:nth-child(4) {
+    left: 35px;
+    z-index: 1;
+    /* Adjust the top position for the fourth button */
+}
+.reactionNo{
+    position: absolute;
+    left: 60px;
+}
+.othersShare{
+    position: absolute;
+    right: 0;
+    background-color: transparent;
+    border: none;
+}
+.myActivity {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.activityBtn {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    gap: 10px;
+}
+
+.hiddenPostBox{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.hiddenInfoContainer{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.undoBtn{
+    background-color: var(--mainTheme);
+    border-radius: 15px;
+    padding: 8px 15px;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.loadMorePostBtn {
+    border: none;
+    height: 100px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--postTheme);
+}
+
+.selectedPostContainer{
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+}
+
+.selectedPost{
+    /* visibility: hidden; */
+    background-color:var(--mainTheme);
+    width: 40vw;
+    position: fixed;
+    left: 30vw;
+    right: 30vw;
+    top: 5vh;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: scroll;
+    height: 95vh;
+    align-items: center;
+}
+
+.commentSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+.comment{
+    background-color:var(--postTheme);
+    border-radius: 40px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px;
+    width: 100%;
+}
+.commentProfile{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    /* background-color: yellow; */
+}
+.commentTextContainer{
+  /* background-color: red; */
+  display: flex;
+  height: 100%;
+  justify-self: flex-start;
+}   
+.line{
+    margin-left: 20px;
+    width: 30px;
+    height: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom:2px solid grey ;
+    border-left:2px solid grey ;
+    /* height: 20px; */
+    /* background-color: var(--otherTheme); */
+}
+
+.commentText{
+    width: 100%;
+    padding: 10px;
+    /* margin-left: 50px; */
+    background-color: var(--mainTheme);
+    border-radius: 10px;
+}
+.socials {
+    background-color: rgb(185, 185, 185);
+    width: 25%;
+    background-color: var(--main2Theme);
+    min-height: 80vh;
+    padding: 10px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.eventContainer {
+    height: 90px;
+    border-bottom: 2px solid grey;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+}
+
+.eventsOption {
+    display: flex;
+    justify-content: space-between;
+    height: 25px;
+}
+
+.eventBox {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.event {
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    background-color:var(--socialTheme);
+    overflow: hidden;
+    min-height: 50px;
+    cursor: pointer;
+}
+
+.eventName {
+    height: 35px;
+    overflow: hidden;
+}
+
+.friendrequestContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    border-bottom: 2px solid grey;
+    height: 150px;
+}
+
+.requestOption {
+    display: flex;
+    justify-content: space-between;
+}
+
+.friendrequestbox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.requestContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    position: relative;
+    height: 100%;
+}
+.friendrequest {
+    height: 110px;
+    background-color:var(--socialTheme);
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+.friendrequestImgContainer {
+    display: flex;
+    gap: 10px;
+    /* align-items: center; */
+}
+.requestTime{
+    position: absolute;
+    right: 10px;
+}
+.requestInfoContainer {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.mutualfriendContainer {
+    display: flex;
+    width: 200px;
+    height: 30px;
+    overflow: hidden;
+    position: absolute;
+    left: 60px;
+}
+.mutualFriendImg{
+    position: absolute;
+}
+
+.mutualFriendImg:nth-child(1) {
+    z-index: 4;
+}
+
+.mutualFriendImg:nth-child(2) {
+    left: 10px;
+    z-index: 3;
+    /* Adjust the top position for the second button */
+}
+
+.mutualFriendImg:nth-child(3) {
+    left: 20px;
+    z-index: 2;
+    /* Adjust the top position for the third button */
+}
+
+.mutualFriendImg:nth-child(4) {
+    left: 30px;
+    z-index: 1;
+    /* Adjust the top position for the fourth button */
+}
+.mutualFriendNo{
+    position: absolute;
+    left: 60px;
+}
+.friendrequestBtn {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 45%;
+    position: absolute;
+    bottom: 7px;
+}
+.acceptBtn {
+    background-color:#0080ff;
+    left: 2%;
+}
+
+.acceptBtn:hover {
+    background-color: #0080ff;
+}
+
+.removeBtn {
+    right: 2%;
+    background-color: var(--otherTheme);
+}
+
+.removeBtn:hover {
+    background-color: rgb(96, 96, 96);
+}
+
+.contactsContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.contactsOptions {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.contactsBox {
+    border-radius: 9px;
+}
+
+.contact {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 5px;
+    border-radius: 9px;
+}
+
+.contactImgContainer {
+    position: relative;
+}
