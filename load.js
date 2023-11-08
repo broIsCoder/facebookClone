@@ -105,7 +105,7 @@ function populatePostHTMl() {
       <button class="othersShare postActivityBtn">${element.shares} shares</button>
     </div>
     <div class="myActivity">
-      <button class="likeBtn activityBtn hoverEffect"><i class="fa-solid fa-thumbs-up fa-2xl like"></i>Like</button>
+      <button class="likeBtn activityBtn hoverEffect"><i class="fa-solid fa-thumbs-up fa-2xl like" style="color: #0080ff;"></i>Like</button>
       <button class="commentBtn activityBtn hoverEffect"><i class="fa-solid fa-comment fa-xl"></i> Comment</button>
       <button class="shareBtn activityBtn hoverEffect"><i class="fa-solid fa-share fa-xl"></i> Share</button>
       </div>`:
