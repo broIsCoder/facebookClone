@@ -7,7 +7,7 @@
     transition: all 0.2s ease-in-out;
 }
 :root{
-    --mainTheme: rgb(30, 29, 29);
+    --mainTheme: #1e1d1d;
     --main2Theme: rgb(30, 29, 29);
     --secondTheme: rgb(34, 34, 34);
     --postTheme:rgb(52, 52, 52);
