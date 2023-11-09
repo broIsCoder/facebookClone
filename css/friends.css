@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+.friendrequestContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color:black;
+    height: 100vh;
+}
+
+.requestOption {
+    display: flex;
+    justify-content: space-between;
+}
+
+.friendrequestbox {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+    background-color: rgb(29, 29, 29);
+    min-height: 130px;
+}
+
+.requestContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    position: relative;
+    height: 100%;
+}
+.friendrequest {
+    height: 110px;
+    background-color:var(--socialTheme);
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+.friendrequestImgContainer {
+    display: flex;
+    gap: 10px;
+    /* align-items: center; */
+}
+.requestTime{
+    position: absolute;
+    right: 10px;
+}
+.requestInfoContainer {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.mutualfriendContainer {
+    display: flex;
+    width: 200px;
+    height: 30px;
+    overflow: hidden;
+    position: absolute;
+    left: 60px;
+}
+.mutualFriendImg{
+    position: absolute;
+}
+
+.mutualFriendImg:nth-child(1) {
+    z-index: 4;
+}
+
+.mutualFriendImg:nth-child(2) {
+    left: 10px;
+    z-index: 3;
+    /* Adjust the top position for the second button */
+}
+
+.mutualFriendImg:nth-child(3) {
+    left: 20px;
+    z-index: 2;
+    /* Adjust the top position for the third button */
+}
+
+.mutualFriendImg:nth-child(4) {
+    left: 30px;
+    z-index: 1;
+    /* Adjust the top position for the fourth button */
+}
+.mutualFriendNo{
+    position: absolute;
+    left: 60px;
+}
+.friendrequestBtn {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 45%;
+    position: absolute;
+    bottom: 7px;
+}
+.acceptBtn {
+    background-color:#0080ff;
+    left: 2%;
+}
+
+.acceptBtn:hover {
+    background-color: #0080ff;
+}
+
+.removeBtn {
+    right: 2%;
+    background-color: var(--otherTheme);
+}
+
+.removeBtn:hover {
+    background-color: rgb(96, 96, 96);
+}
